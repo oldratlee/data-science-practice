@@ -10,7 +10,7 @@
 
 数据科学3者下的两两交叉应用，其实已经广为大家所知：
 
-1. 数学/统计学 **`+`** 计算机技术（编程）   
+1. 数学/统计学 **`+`** 计算机技术（编程）  
     **`=>`** **机器学习**（Bang!）
 1. 计算机技术（编程） **`+`** 业务领域  
     **`=>`** **业务软件开发**（平时说的软件工程师）  
@@ -39,6 +39,7 @@
         - [1.2.1 `Jupyter Notebook`](#121-jupyter-notebook)
         - [1.2.2 `PyCharm`](#122-pycharm)
         - [1.2.3 `VS Code`](#123-vs-code)
+- [2. 自己的数据科学学习/实践](#2-%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6%E5%AD%A6%E4%B9%A0%E5%AE%9E%E8%B7%B5)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -47,11 +48,11 @@
 
 # 0. 学习资料/书单
 
-- [数据科学/Data Science](https://www.douban.com/doulist/119731263/)，个人推荐先看：
+- [数据科学/Data Science](https://www.douban.com/doulist/119731263/) 书单，个人推荐先看：
     - [深入浅出数据科学](https://book.douban.com/subject/30338984/)
     - [集体智慧编程](https://book.douban.com/subject/3288908/)
     - [Python数据科学手册](https://book.douban.com/subject/27667378/)
-- [数据分析](https://www.douban.com/doulist/45963852/)，个人推荐先看：
+- [数据分析](https://www.douban.com/doulist/45963852/) 书单，个人推荐先看：
     - [精益数据分析](https://book.douban.com/subject/26278639/)
     - [利用Python进行数据分析 原书第2版](https://book.douban.com/subject/30283996/)
 
@@ -114,7 +115,7 @@
     - 修改`~/.pip/pip.conf`：
 
             [global]
-            trusted-host =  pypi.douban.com
+            trusted-host = pypi.douban.com
             index-url = http://pypi.douban.com/simple
 
 更多说明参见： https://mirror.tuna.tsinghua.edu.cn/help/anaconda/ 或是 搜索一下 :)
@@ -153,3 +154,10 @@
 
 无需多解释。
 
+# 2. 自己的数据科学学习/实践
+
+- 学习
+    - [《统计学：从数据到结论》第四版 _吴喜之_：代码代码练习库 - github.com/oldratlee/statistics-from-data-to-conclusion-4e](https://github.com/oldratlee/statistics-from-data-to-conclusion-4e)
+- 实践
+    - [计数不对的『豆瓣豆列』抓取 - github.com/oldratlee/doulist-wrong-counter-analysis](https://github.com/oldratlee/doulist-wrong-counter-analysis)  
+        基于`Jupyter Notebook`使用`Python`完成 页面抓取 与 分析。
