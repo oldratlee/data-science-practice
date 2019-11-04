@@ -168,7 +168,7 @@
 
 - 学习
     - 《统计学：从数据到结论》第四版 _吴喜之_：  
-        [代码代码练习库 - github.com/oldratlee/statistics-from-data-to-conclusion-4e](https://github.com/oldratlee/statistics-from-data-to-conclusion-4e)
+        [代码练习库 - github.com/oldratlee/statistics-from-data-to-conclusion-4e](https://github.com/oldratlee/statistics-from-data-to-conclusion-4e)
 
 - 实践
     - 计数不对的『豆瓣豆列』抓取：  
