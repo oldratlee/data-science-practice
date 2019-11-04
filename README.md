@@ -90,22 +90,26 @@
 - https://www.anaconda.com/distribution/
 - 照着网页上的说明，完成安装。
 
-安装好了之后，执行
+安装好`Anaconda`之后，执行命令
 
-- `ipython` （加强`python`解释器）
-- `jupyter-notebook` （基于`Web`浏览器里的一体化交互式环境）
+- `jupyter notebook`： 运行基于`Web`浏览器里的一体化交互式环境
+- `ipython`：运行加强的`python`解释器
 
-命令，运行看看～ 🎉
+，运行看看～ 🎉
 
-如有问题，更多说明参见：https://www.jianshu.com/p/042fd657e2d4 ，或是搜索一下 :)
+安装过程，如有问题，更多说明参见
+
+- 2019年最新最全的 Anaconda 安装指南 - 简书  
+    https://www.jianshu.com/p/e23e70fe8788
+- 或是搜索一下 :)
 
 ### 1.1.2 配置镜像源
 
 在国内没有镜像可不行，包安装下载要等死。
 
 - 配置`Anaconda`的镜像源
-    - 使用清华的镜像：https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    - 通过命令行设置
+    - 使用清华的镜像： https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+    - 通过命令行设置（安装好`Anaconda`之后，包含了`conda`命令）
 
             conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
             conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -118,7 +122,13 @@
             trusted-host = pypi.douban.com
             index-url = http://pypi.douban.com/simple
 
-更多说明参见： https://mirror.tuna.tsinghua.edu.cn/help/anaconda/ 或是 搜索一下 :)
+如有问题，更多说明参见
+
+- Anaconda | 镜像站使用帮助 | 清华大学开源软件镜像站  
+    https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
+- `Anaconda`修改国内镜像源 - 简书  
+    https://www.jianshu.com/p/042fd657e2d4
+- 或是 搜索一下 :)
 
 ### 1.1.3 `Anaconda`的使用
 
@@ -157,7 +167,10 @@
 # 2. 自己的数据科学学习/实践
 
 - 学习
-    - [《统计学：从数据到结论》第四版 _吴喜之_：代码代码练习库 - github.com/oldratlee/statistics-from-data-to-conclusion-4e](https://github.com/oldratlee/statistics-from-data-to-conclusion-4e)
+    - 《统计学：从数据到结论》第四版 _吴喜之_：  
+        [代码代码练习库 - github.com/oldratlee/statistics-from-data-to-conclusion-4e](https://github.com/oldratlee/statistics-from-data-to-conclusion-4e)
+
 - 实践
-    - [计数不对的『豆瓣豆列』抓取 - github.com/oldratlee/doulist-wrong-counter-analysis](https://github.com/oldratlee/doulist-wrong-counter-analysis)  
+    - 计数不对的『豆瓣豆列』抓取：  
+        [github.com/oldratlee/doulist-wrong-counter-analysis](https://github.com/oldratlee/doulist-wrong-counter-analysis)  
         基于`Jupyter Notebook`使用`Python`完成 页面抓取 与 分析。
