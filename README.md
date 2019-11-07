@@ -108,19 +108,35 @@
 在国内没有镜像可不行，包安装下载要等死。
 
 - 配置`Anaconda`的镜像源
-    - 使用清华的镜像： https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-    - 通过命令行设置（安装好`Anaconda`之后，包含了`conda`命令）
+    - 使用清华的镜像。
+    - 直接修改配置文件`~/.condarc`：
 
-            conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-            conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-            conda config --set show_channel_urls yes
-    - 或是修改配置文件`~/.condarc`
+          channels:
+            - defaults
+          show_channel_urls: true
+          default_channels:
+            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+          custom_channels:
+            conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+            msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+            bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+            menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+            pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+            simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+    - 或是通过命令行设置（安装好`Anaconda`之后，包含了`conda`）：
+
+          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+          conda config --set show_channel_urls yes
 - 配置`pip`的镜像源
     - 修改`~/.pip/pip.conf`：
 
-            [global]
-            trusted-host = pypi.douban.com
-            index-url = http://pypi.douban.com/simple
+          [global]
+          trusted-host = pypi.douban.com
+          index-url = http://pypi.douban.com/simple
 
 如有问题，更多说明参见
 
