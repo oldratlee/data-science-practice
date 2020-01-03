@@ -101,7 +101,7 @@
 
 - 2019年最新最全的 Anaconda 安装指南 - 简书  
     https://www.jianshu.com/p/e23e70fe8788
-- 或是搜索一下 :)
+- 或是搜索一下 :")
 
 ### 1.1.2 配置镜像源
 
@@ -111,32 +111,40 @@
     - 使用清华的镜像。
     - 直接修改配置文件`~/.condarc`：
 
-          channels:
-            - defaults
-          show_channel_urls: true
-          default_channels:
-            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
-            - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-          custom_channels:
-            conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-            msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-            bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-            menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-            pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
-            simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+        ```yaml
+        channels:
+          - defaults
+        show_channel_urls: true
+        default_channels:
+          - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+          - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+          - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+        custom_channels:
+          conda-forge: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+          msys2: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+          bioconda: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+          menpo: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+          pytorch: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+          simpleitk: https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud
+        ```
+
     - 或是通过命令行设置（安装好`Anaconda`之后，包含了`conda`）：
 
-          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-          conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-          conda config --set show_channel_urls yes
+        ```clj
+        conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+        conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+        conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+        conda config --set show_channel_urls yes
+        ```
+
 - 配置`pip`的镜像源
     - 修改`~/.pip/pip.conf`：
 
-          [global]
-          trusted-host = pypi.douban.com
-          index-url = http://pypi.douban.com/simple
+        ```ini
+        [global]
+        trusted-host = pypi.douban.com
+        index-url = http://pypi.douban.com/simple
+        ```
 
 如有问题，更多说明参见
 
@@ -144,7 +152,7 @@
     https://mirror.tuna.tsinghua.edu.cn/help/anaconda/
 - `Anaconda`修改国内镜像源 - 简书  
     https://www.jianshu.com/p/042fd657e2d4
-- 或是 搜索一下 :)
+- 或是 搜索一下 :")
 
 ### 1.1.3 `Anaconda`的使用
 
